@@ -2,13 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:title="Add"
+        app:showAsAction="always">
 
-    <item
-        android:id="@+id/gallery"
-        android:title="Gallery"/>
-    <item
-        app:showAsAction="always"
-        android:id="@+id/add"
-        android:title="Add"/>
+
+        <menu>
+
+            <item
+                android:id="@+id/gallery"
+                android:icon="@drawable/ic_baseline_image_24"
+                android:title="Gallery" />
+            <item
+                android:id="@+id/add"
+                android:icon="@drawable/ic_baseline_post_add_24"
+                android:title="Add"
+
+                />
+        </menu>
+    </item>
+
 
 </menu>

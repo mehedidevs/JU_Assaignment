@@ -26,6 +26,15 @@ public class AddImageActivity extends AppCompatActivity {
         binding = ActivityAddImageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.toolbar.getRoot().setTitle("");
+        setSupportActionBar(binding.toolbar.getRoot());
+
+        binding.toolbar.backBtn.setOnClickListener(v -> {
+
+            finish();
+        });
+
+
         binding.floatingActionButton.setOnClickListener(v -> {
             pickImage();
         });

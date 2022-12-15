@@ -17,6 +17,22 @@
         android:theme="@style/Theme.JUGallary"
         tools:targetApi="31">
         <activity
+            android:name=".DetailsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".GallaryActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AddImageActivity"
             android:exported="false">
             <meta-data

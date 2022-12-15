@@ -9,7 +9,6 @@ import androidx.room.PrimaryKey;
 public class Gallery {
     @PrimaryKey(autoGenerate = true)
     int id;
-
     String imageUri;
     String imageName,imageDetails;
     long dateMillis;
